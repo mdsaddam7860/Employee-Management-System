@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 const Login = ({ handleLogin }) => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("employee5@example.com");
+  const [password, setPassword] = useState("employee@123");
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -28,7 +28,7 @@ const Login = ({ handleLogin }) => {
             required
             className="outline-none bg-transparent border-2 border-emerald-600 font-medium text-lg py-2 px-6 rounded-full placeholder:text-gray-400"
             type="email"
-            placeholder="Enter your email"
+            placeholder="employee5@example.com"
           />
           <input
             value={password}
